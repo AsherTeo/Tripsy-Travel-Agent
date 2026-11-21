@@ -3,13 +3,12 @@ from langchain.messages import AIMessage
 import model_llm
 from uuid import uuid4 
 from build_graph import graph 
-from chatbot import simple_chatbot
 
 def test_chatbot():
     fake_llm = MagicMock()
     fake_llm.invoke.return_value = AIMessage(content= "You should eat chicken rice")
 
-    with patch.object(simple_chatbot, "llm", fake_llm):
+    with patch.object(model_llm, "load_llm", fake_llm):
         config = {'configurable': {"thread_id": {uuid4()}}}
         response = graph.invoke({'messages': [{"role": "user", "content": "What should i eat ?"}]}, config)
 
