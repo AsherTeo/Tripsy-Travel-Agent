@@ -4,191 +4,162 @@
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Suvarnabhumi Airport",
-                        "id": "BKK",
-                        "time": "2026-12-25 22:20"
+                        "name": "Shanghai Pudong International Airport",
+                        "id": "PVG",
+                        "time": "2027-02-09 16:25"
                     },
                     "arrival_airport": {
                         "name": "Singapore Changi Airport",
                         "id": "SIN",
-                        "time": "2026-12-26 01:55"
+                        "time": "2027-02-09 22:15"
                     },
-                    "duration": 155,
-                    "airplane": "Airbus A320neo",
-                    "airline": "Scoot",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "duration": 350,
+                    "airplane": "Airbus A380",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
                     "travel_class": "Economy",
-                    "flight_number": "TR 621",
-                    "legroom": "28 in",
+                    "flight_number": "SQ 833",
+                    "legroom": "32 in",
                     "extensions": [
-                        "Below average legroom (28 in)",
-                        "Carbon emissions estimate: 100 kg"
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 312 kg"
                     ]
                 }
             ],
-            "total_duration": 155,
+            "total_duration": 350,
             "carbon_emissions": {
-                "this_flight": 100000,
-                "typical_for_this_route": 105000,
-                "difference_percent": -5
-            },
-            "price": 461,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-            "booking_token": "WyJDalJJZUY5eVUzWjNkRmhMYlZWQlNFUXRabEZDUnkwdExTMHRMUzB0TFMxNWJIUXpNVUZCUVVGQlIzTkRjRW8wU1U1emVHOUJFZ1ZVVWpZeU1Sb0xDSlRvQWhBQ0dnTlRSMFE0SEhDcGx3ST0iLFtbIlNJTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlRSIiwiNjA4Il1dLFtbIkJLSyIsIjIwMjYtMTItMjUiLCJTSU4iLG51bGwsIlRSIiwiNjIxIl1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Suvarnabhumi Airport",
-                        "id": "BKK",
-                        "time": "2026-12-25 09:15"
-                    },
-                    "arrival_airport": {
-                        "name": "Singapore Changi Airport",
-                        "id": "SIN",
-                        "time": "2026-12-25 12:50"
-                    },
-                    "duration": 155,
-                    "airplane": "Airbus A320neo",
-                    "airline": "Scoot",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-                    "travel_class": "Economy",
-                    "flight_number": "TR 609",
-                    "legroom": "28 in",
-                    "extensions": [
-                        "Below average legroom (28 in)",
-                        "Carbon emissions estimate: 100 kg"
-                    ]
-                }
-            ],
-            "total_duration": 155,
-            "carbon_emissions": {
-                "this_flight": 100000,
-                "typical_for_this_route": 105000,
-                "difference_percent": -5
-            },
-            "price": 491,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-            "booking_token": "WyJDalJJZUY5eVUzWjNkRmhMYlZWQlNFUXRabEZDUnkwdExTMHRMUzB0TFMxNWJIUXpNVUZCUVVGQlIzTkRjRW8wU1U1emVHOUJFZ1ZVVWpZd09Sb0xDTXovQWhBQ0dnTlRSMFE0SEhEQXFRST0iLFtbIlNJTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlRSIiwiNjA4Il1dLFtbIkJLSyIsIjIwMjYtMTItMjUiLCJTSU4iLG51bGwsIlRSIiwiNjA5Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Suvarnabhumi Airport",
-                        "id": "BKK",
-                        "time": "2026-12-25 17:00"
-                    },
-                    "arrival_airport": {
-                        "name": "Singapore Changi Airport",
-                        "id": "SIN",
-                        "time": "2026-12-25 20:35"
-                    },
-                    "duration": 155,
-                    "airplane": "Airbus A321neo",
-                    "airline": "Scoot",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-                    "travel_class": "Economy",
-                    "flight_number": "TR 689",
-                    "legroom": "28 in",
-                    "extensions": [
-                        "Below average legroom (28 in)",
-                        "Carbon emissions estimate: 93 kg"
-                    ]
-                }
-            ],
-            "total_duration": 155,
-            "carbon_emissions": {
-                "this_flight": 93000,
-                "typical_for_this_route": 105000,
-                "difference_percent": -11
-            },
-            "price": 514,
-            "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-            "booking_token": "WyJDalJJZUY5eVUzWjNkRmhMYlZWQlNFUXRabEZDUnkwdExTMHRMUzB0TFMxNWJIUXpNVUZCUVVGQlIzTkRjRW8wU1U1emVHOUJFZ1ZVVWpZNE9Sb0xDTWlSQXhBQ0dnTlRSMFE0SEhDNHR3ST0iLFtbIlNJTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlRSIiwiNjA4Il1dLFtbIkJLSyIsIjIwMjYtMTItMjUiLCJTSU4iLG51bGwsIlRSIiwiNjg5Il1dXQ=="
-        },
-        {
-            "flights": [
-                {
-                    "departure_airport": {
-                        "name": "Suvarnabhumi Airport",
-                        "id": "BKK",
-                        "time": "2026-12-25 18:35"
-                    },
-                    "arrival_airport": {
-                        "name": "Singapore Changi Airport",
-                        "id": "SIN",
-                        "time": "2026-12-25 22:10"
-                    },
-                    "duration": 155,
-                    "airplane": "Boeing 787",
-                    "airline": "Scoot",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-                    "travel_class": "Economy",
-                    "flight_number": "TR 611",
-                    "legroom": "30 in",
-                    "extensions": [
-                        "Average legroom (30 in)",
-                        "Wi-Fi for a fee",
-                        "In-seat power outlet",
-                        "Carbon emissions estimate: 103 kg"
-                    ],
-                    "often_delayed_by_over_30_min": true
-                }
-            ],
-            "total_duration": 155,
-            "carbon_emissions": {
-                "this_flight": 103000,
-                "typical_for_this_route": 105000,
+                "this_flight": 313000,
+                "typical_for_this_route": 321000,
                 "difference_percent": -2
             },
-            "price": 514,
+            "price": 615,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-            "booking_token": "WyJDalJJZUY5eVUzWjNkRmhMYlZWQlNFUXRabEZDUnkwdExTMHRMUzB0TFMxNWJIUXpNVUZCUVVGQlIzTkRjRW8wU1U1emVHOUJFZ1ZVVWpZeE1Sb0xDTWlSQXhBQ0dnTlRSMFE0SEhDNHR3ST0iLFtbIlNJTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlRSIiwiNjA4Il1dLFtbIkJLSyIsIjIwMjYtMTItMjUiLCJTSU4iLG51bGwsIlRSIiwiNjExIl1dXQ=="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRnek14b0xDTHpnQXhBQ0dnTlRSMFE0SEhEUjlBST0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODMzIl1dXQ=="
         },
         {
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Suvarnabhumi Airport",
-                        "id": "BKK",
-                        "time": "2026-12-25 20:15"
+                        "name": "Shanghai Pudong International Airport",
+                        "id": "PVG",
+                        "time": "2027-02-09 13:50"
                     },
                     "arrival_airport": {
                         "name": "Singapore Changi Airport",
                         "id": "SIN",
-                        "time": "2026-12-25 23:50"
+                        "time": "2027-02-09 19:40"
                     },
-                    "duration": 155,
-                    "airplane": "Boeing 787",
-                    "airline": "Scoot",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "duration": 350,
+                    "airplane": "Boeing 777",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
                     "travel_class": "Economy",
-                    "flight_number": "TR 637",
-                    "legroom": "30 in",
+                    "flight_number": "SQ 831",
+                    "legroom": "32 in",
                     "extensions": [
-                        "Average legroom (30 in)",
-                        "Wi-Fi for a fee",
-                        "In-seat power outlet",
-                        "Carbon emissions estimate: 101 kg"
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 348 kg"
                     ]
                 }
             ],
-            "total_duration": 155,
+            "total_duration": 350,
             "carbon_emissions": {
-                "this_flight": 101000,
-                "typical_for_this_route": 105000,
-                "difference_percent": -4
+                "this_flight": 348000,
+                "typical_for_this_route": 321000,
+                "difference_percent": 8
             },
-            "price": 514,
+            "price": 741,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
-            "booking_token": "WyJDalJJZUY5eVUzWjNkRmhMYlZWQlNFUXRabEZDUnkwdExTMHRMUzB0TFMxNWJIUXpNVUZCUVVGQlIzTkRjRW8wU1U1emVHOUJFZ1ZVVWpZek54b0xDTWlSQXhBQ0dnTlRSMFE0SEhDNHR3ST0iLFtbIlNJTiIsIjIwMjYtMTItMjAiLCJCS0siLG51bGwsIlRSIiwiNjA4Il1dLFtbIkJLSyIsIjIwMjYtMTItMjUiLCJTSU4iLG51bGwsIlRSIiwiNjM3Il1dXQ=="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRnek1Sb0xDUFRDQkJBQ0dnTlRSMFE0SEhEOXdBTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODMxIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Shanghai Pudong International Airport",
+                        "id": "PVG",
+                        "time": "2027-02-09 00:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 06:00"
+                    },
+                    "duration": 350,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 825",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 203 kg"
+                    ],
+                    "overnight": true
+                }
+            ],
+            "total_duration": 350,
+            "carbon_emissions": {
+                "this_flight": 203000,
+                "typical_for_this_route": 321000,
+                "difference_percent": -37
+            },
+            "price": 836,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRneU5Sb0xDSkNOQlJBQ0dnTlRSMFE0SEhERStnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODI1Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Shanghai Pudong International Airport",
+                        "id": "PVG",
+                        "time": "2027-02-09 08:20"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 14:10"
+                    },
+                    "duration": 350,
+                    "airplane": "Airbus A350",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 827",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 253 kg"
+                    ]
+                }
+            ],
+            "total_duration": 350,
+            "carbon_emissions": {
+                "this_flight": 254000,
+                "typical_for_this_route": 321000,
+                "difference_percent": -21
+            },
+            "price": 836,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRneU54b0xDSkNOQlJBQ0dnTlRSMFE0SEhERStnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODI3Il1dXQ=="
         }
     ]
 }

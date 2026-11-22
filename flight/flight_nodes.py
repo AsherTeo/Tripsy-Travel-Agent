@@ -152,7 +152,7 @@ def summary_chosen_flight(state:TravelState):
     price = int(return_value.split("|")[0].split("$")[1])
 
     text = (
-        "✈️ Your trip summary\n\n"
+        "========== ✈️ Your trip summary ========== \n\n"
         f"Outbound\n   {fmt_leg(outbound_flight)}\n\n"
         f"Return\n   {fmt_leg(return_flight)}\n\n"
         f"Total (round trip): ${price}"
