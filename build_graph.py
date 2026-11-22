@@ -10,7 +10,9 @@ builder = StateGraph(TravelState)
 builder.add_node('chatbot_node', chatbot)
 builder.add_node('flight_parser', flight_parser)
 builder.add_node('flight_api', flight_api)
-builder.add_node('flight_result', flight_result)
+builder.add_node('flight_options', flight_options)
+#builder.add_node('select_options_node',select_options_node)
+
 
 builder.add_node('itineary_parser', itineary_parser)
 
@@ -20,5 +22,6 @@ builder.add_conditional_edges(START, router_node, {'chatbot': 'chatbot_node',
                                                 })
 
 builder.add_edge('flight_parser', 'flight_api')
-builder.add_edge('flight_api', 'flight_result')
+builder.add_edge('flight_api', 'flight_options')
+#builder.add_edge('flight_options', 'select_options_node')
 graph = builder.compile(checkpointer=InMemorySaver())

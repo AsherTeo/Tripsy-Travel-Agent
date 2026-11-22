@@ -7,3 +7,4 @@ class TravelState(MessagesState):
     flight_params: FlightParams | None
     flight_results: dict
     flight_options: List | None
+    flight_outbound_picked:List| None

@@ -1,1 +1,201 @@
-null
+{
+    "Total_Flight": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-19 14:25"
+                    },
+                    "arrival_airport": {
+                        "name": "Suvarnabhumi Airport",
+                        "id": "BKK",
+                        "time": "2026-12-19 16:00"
+                    },
+                    "duration": 155,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 688",
+                    "ticket_also_sold_by": [
+                        "Singapore Airlines"
+                    ],
+                    "legroom": "30 in",
+                    "extensions": [
+                        "Average legroom (30 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 102 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "total_duration": 155,
+            "carbon_emissions": {
+                "this_flight": 102000,
+                "typical_for_this_route": 106000,
+                "difference_percent": -4
+            },
+            "price": 358,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "departure_token": "WyJDalJJWDJ0a2RVNXZjVkJWU0hOQlRtTm5ObEZDUnkwdExTMHRMUzB0TFc5cmNtb3hOMEZCUVVGQlIzTkRZM0ZCVG5CWE1XbEJFZ1ZVVWpZNE9Cb0xDS3FYQWhBQ0dnTlZVMFE0SEhDcWx3ST0iLFtbIlNJTiIsIjIwMjYtMTItMTkiLCJCS0siLG51bGwsIlRSIiwiNjg4Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-19 16:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Suvarnabhumi Airport",
+                        "id": "BKK",
+                        "time": "2026-12-19 17:35"
+                    },
+                    "duration": 155,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 610",
+                    "legroom": "30 in",
+                    "extensions": [
+                        "Average legroom (30 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 104 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "total_duration": 155,
+            "carbon_emissions": {
+                "this_flight": 104000,
+                "typical_for_this_route": 106000,
+                "difference_percent": -2
+            },
+            "price": 358,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "departure_token": "WyJDalJJWDJ0a2RVNXZjVkJWU0hOQlRtTm5ObEZDUnkwdExTMHRMUzB0TFc5cmNtb3hOMEZCUVVGQlIzTkRZM0ZCVG5CWE1XbEJFZ1ZVVWpZeE1Cb0xDS3FYQWhBQ0dnTlZVMFE0SEhDcWx3ST0iLFtbIlNJTiIsIjIwMjYtMTItMTkiLCJCS0siLG51bGwsIlRSIiwiNjEwIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-19 17:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Suvarnabhumi Airport",
+                        "id": "BKK",
+                        "time": "2026-12-19 19:15"
+                    },
+                    "duration": 155,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 636",
+                    "legroom": "30 in",
+                    "extensions": [
+                        "Average legroom (30 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 102 kg"
+                    ]
+                }
+            ],
+            "total_duration": 155,
+            "carbon_emissions": {
+                "this_flight": 102000,
+                "typical_for_this_route": 106000,
+                "difference_percent": -4
+            },
+            "price": 358,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "departure_token": "WyJDalJJWDJ0a2RVNXZjVkJWU0hOQlRtTm5ObEZDUnkwdExTMHRMUzB0TFc5cmNtb3hOMEZCUVVGQlIzTkRZM0ZCVG5CWE1XbEJFZ1ZVVWpZek5ob0xDS3FYQWhBQ0dnTlZVMFE0SEhDcWx3ST0iLFtbIlNJTiIsIjIwMjYtMTItMTkiLCJCS0siLG51bGwsIlRSIiwiNjM2Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-19 19:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Suvarnabhumi Airport",
+                        "id": "BKK",
+                        "time": "2026-12-19 21:15"
+                    },
+                    "duration": 155,
+                    "airplane": "Airbus A321neo",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 620",
+                    "legroom": "28 in",
+                    "extensions": [
+                        "Below average legroom (28 in)",
+                        "Carbon emissions estimate: 94 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "total_duration": 155,
+            "carbon_emissions": {
+                "this_flight": 94000,
+                "typical_for_this_route": 106000,
+                "difference_percent": -11
+            },
+            "price": 358,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "departure_token": "WyJDalJJWDJ0a2RVNXZjVkJWU0hOQlRtTm5ObEZDUnkwdExTMHRMUzB0TFc5cmNtb3hOMEZCUVVGQlIzTkRZM0ZCVG5CWE1XbEJFZ1ZVVWpZeU1Cb0xDS3FYQWhBQ0dnTlZVMFE0SEhDcWx3ST0iLFtbIlNJTiIsIjIwMjYtMTItMTkiLCJCS0siLG51bGwsIlRSIiwiNjIwIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-19 09:15"
+                    },
+                    "arrival_airport": {
+                        "name": "Suvarnabhumi Airport",
+                        "id": "BKK",
+                        "time": "2026-12-19 10:50"
+                    },
+                    "duration": 155,
+                    "airplane": "Airbus A321neo",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 624",
+                    "legroom": "28 in",
+                    "extensions": [
+                        "Below average legroom (28 in)",
+                        "Carbon emissions estimate: 94 kg"
+                    ]
+                }
+            ],
+            "total_duration": 155,
+            "carbon_emissions": {
+                "this_flight": 94000,
+                "typical_for_this_route": 106000,
+                "difference_percent": -11
+            },
+            "price": 421,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "departure_token": "WyJDalJJWDJ0a2RVNXZjVkJWU0hOQlRtTm5ObEZDUnkwdExTMHRMUzB0TFc5cmNtb3hOMEZCUVVGQlIzTkRZM0ZCVG5CWE1XbEJFZ1ZVVWpZeU5Cb0xDTFRJQWhBQ0dnTlZVMFE0SEhDMHlBST0iLFtbIlNJTiIsIjIwMjYtMTItMTkiLCJCS0siLG51bGwsIlRSIiwiNjI0Il1dXQ=="
+        }
+    ]
+}
