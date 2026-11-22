@@ -10,8 +10,21 @@ while True:
         break
     response = graph.invoke({'messages':[{'role': 'user', 'content': question}]}, config)
 
+    shown = 0
+
     while '__interrupt__' in response:
+        for m in response['messages'][shown:]:
+            if m.type == 'ai':
+                print("AI:", m.content)
+                
+        shown = len(response['messages'])
         print("AI:", response['__interrupt__'][0].value)
         answer = input('User: ')
         response = graph.invoke(Command(resume=answer), config)
-    print("AI:", response['messages'][-1].content)
+
+    for m in response['messages'][shown:]:
+        if m.type == 'ai':
+            print("AI:", m.content)
+            
+
+    shown = len(response['messages'])

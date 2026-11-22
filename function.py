@@ -1,3 +1,4 @@
+from datetime import datetime
 
 def get_best_flight(results, n = 5):
 
@@ -41,3 +42,14 @@ def summary_flight(results):
                     })
     return summary
 
+def fmt_leg(f):
+    departure = f[0]['departure_airport']
+    arrival = f[0]['arrival_airport']
+
+    dep = datetime.strptime(departure['time'], "%Y-%m-%d %H:%M")
+    arr = datetime.strptime(arrival['time'], "%Y-%m-%d %H:%M")
+    return (
+        f"{f[0]['airline']} {f[0]['flight_number']}\n"
+        f"   {departure['name']} {dep:%a %d %b, %H:%M} → "
+        f"{arrival['name']} {arr:%a %d %b, %H:%M}"
+    )
