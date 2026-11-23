@@ -13,3 +13,5 @@ class TravelState(MessagesState):
     flight_return_results: dict
     flight_return_picked:List| None
     flight_return_params: dict| None 
+
+    try_again : str

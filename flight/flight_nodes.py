@@ -1,5 +1,6 @@
 from states import TravelState
 from langgraph.types import interrupt
+from langchain.messages import SystemMessage, HumanMessage
 import model_llm
 from flight.model import FlightParams
 import serpapi
@@ -11,10 +12,10 @@ api_key = os.getenv("SERP_API_KEY")
 client = serpapi.Client(api_key=api_key)
 
 def flight_parser(state:TravelState):
-
+    
     llm_flight_params = model_llm.load_llm().with_structured_output(FlightParams)
     response = llm_flight_params.invoke(state['messages'])
-
+    print("This the paras", response.model_dump())
     return {'flight_params': response.model_dump()}
 
 def outbound_flight_api(state:TravelState):
@@ -30,6 +31,59 @@ def outbound_flight_api(state:TravelState):
         json.dump(best, file, indent=4)
   
     return {'flight_outbound_results': best or None}
+
+def got_flight(state:TravelState):
+    result = state['flight_outbound_results']
+    if not result:
+        return 'no result'
+    return 'got result'
+
+def retry_outbound_node(state:TravelState):
+    params = state['flight_params']
+    outbound_date = params['outbound_date'] 
+    return_date = params['return_date'] if params['return_date'] else ""
+    dates = outbound_date + f"'to {return_date}'"
+    msg = f"Sorry, there are no flights from {params['departure_id']} to {params['arrival_id']} on {dates}"
+
+    valid = ['y', 'n']
+    answer = interrupt(f'{msg}. \nDo you want to retry? (y/n)')
+    while answer not in valid:
+        answer = interrupt(f"Invalid. Do you want to retry? (y/n)")
+
+    return {'try_again': answer.strip()}
+
+def yes_node(state:TravelState):
+    options = state['try_again']
+    if options == 'y':
+        return 'yes'
+    if options == 'n':
+        return 'no'
+
+def update_outbound_node(state:TravelState):
+
+    answer = interrupt('Please type in your new request')
+    user_params = state['flight_params']
+
+    prompt = (
+        f"This is user previous search information {user_params}"
+        f"This is user new reqirement {answer}"
+        "Keep everything the same except the user requirements"
+        "Example: if the user type 2026, then just change the year keep the rest untouched"
+        "Example: if the user type a whole new requirement, change everything accordingly"
+    )
+
+    llm_flight_params = model_llm.load_llm().with_structured_output(FlightParams)
+    
+    new_params = llm_flight_params.invoke(prompt)
+
+    return {
+        "messages": [HumanMessage(content=answer)],
+        'flight_params': new_params.model_dump(),
+        "flight_outbound_results": None,
+        "flight_outbound_picked": None,
+        "flight_outbound_params": None,
+        
+    }
 
 def select_onbound_flight_options(state:TravelState):
     if not state.get('flight_outbound_results'):
@@ -146,15 +200,40 @@ def select_return_flight_options(state:TravelState):
 def summary_chosen_flight(state:TravelState):
 
     outbound_flight = state['flight_outbound_picked']['flights']
-    return_flight = state['flight_return_picked']['flights']
-    return_value = state['flight_return_params']
 
-    price = int(return_value.split("|")[0].split("$")[1])
+    if state['flight_params']['type'] == 2:
+        outbound_value = state['flight_outbound_params']
+        price = int(outbound_value.split("|")[0].split("$")[1])
+        text = (
+                "========== ✈️ Your trip summary ========== \n\n"
+                f"Outbound\n   {fmt_leg(outbound_flight)}\n\n"
+                f"Total (round trip): ${price}")
+        
+        return {'messages': [{'role': 'assistant', 'content': text}]}
+    
+    else:
+        return_flight = state['flight_return_picked']['flights']
+        return_value = state['flight_return_params']
 
-    text = (
-        "========== ✈️ Your trip summary ========== \n\n"
-        f"Outbound\n   {fmt_leg(outbound_flight)}\n\n"
-        f"Return\n   {fmt_leg(return_flight)}\n\n"
-        f"Total (round trip): ${price}"
-    )
+        price = int(return_value.split("|")[0].split("$")[1])
+
+        text = (
+            "========== ✈️ Your trip summary ========== \n\n"
+            f"Outbound\n   {fmt_leg(outbound_flight)}\n\n"
+            f"Return\n   {fmt_leg(return_flight)}\n\n"
+            f"Total (round trip): ${price}"
+        )
     return {'messages': [{'role': 'assistant', 'content': text}]}
+
+
+def flight_end(state:TravelState):
+
+    prompt = "Thanks for using Tripsy! Hope you have an amazing trip. See you next time! ✈️"
+
+    return{
+        "messages": [{'role': 'assistant', 'content': prompt}],
+        'flight_params': None,
+        "flight_outbound_results": None,
+        "flight_outbound_picked": None,
+        "flight_outbound_params": None,
+    }

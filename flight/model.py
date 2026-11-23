@@ -3,12 +3,12 @@ from typing import Literal, Optional
 
 class FlightParams(BaseModel):
     engine: Literal['google_flights'] = 'google_flights'
-    hl: str = 'en'
-    gl: str = 'sg'
+    hl: Literal['en'] = 'en'  
+    gl: Literal['sg'] = 'sg' 
     departure_id: str = Field(default='SIN', description="Return the IATA airport code of the country. " \
                                                          "If the user doesn't mention where they're flying from, use 'SIN'.")
     arrival_id: str = Field(description='Return the IATA airport code of the country')
-    currency: str = 'SGD'
+    currency: Literal['SGD'] = 'SGD'
     type: Literal[1, 2] = Field(default=1,description=(
                                             "Determine the flight type: "
                                             "1 = Round trip, 2 = One way. "
@@ -36,15 +36,15 @@ class FlightParams(BaseModel):
         
     #multi_city_json: Dict = Field(default_factory=dict)
     
-    # adults : int 
+    adults : int 
     # children : Optional[int] 
     # infants_in_seat: int = 0
     # infants_on_lap : int = 0
     
     
     
-    # outbound_times:Optional[str] = None
-    # return_times: Optional[str] = None
+    outbound_times:Optional[str] = None
+    return_times: Optional[str] = None
     
     # max_price : Optional[int] = None 
     # outbound_times : Optional[str] = None 

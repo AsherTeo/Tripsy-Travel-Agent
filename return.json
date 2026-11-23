@@ -35,10 +35,10 @@
                 "typical_for_this_route": 321000,
                 "difference_percent": -2
             },
-            "price": 615,
+            "price": 696,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRnek14b0xDTHpnQXhBQ0dnTlRSMFE0SEhEUjlBST0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODMzIl1dXQ=="
+            "booking_token": "WyJDalJJYmpSd0xVeFFWbWxvZFVWQlVFOU9lR2RDUnkwdExTMHRMUzB0Y0dwaVkzRXhPVUZCUVVGQlIzTkVkMWxSUnpGaVdFbEJFZ1ZUVVRnek14b0xDTlNmQkJBQ0dnTlRSMFE0SEhDanBRTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODMzIl1dXQ=="
         },
         {
             "flights": [
@@ -75,10 +75,10 @@
                 "typical_for_this_route": 321000,
                 "difference_percent": 8
             },
-            "price": 741,
+            "price": 881,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRnek1Sb0xDUFRDQkJBQ0dnTlRSMFE0SEhEOXdBTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODMxIl1dXQ=="
+            "booking_token": "WyJDalJJYmpSd0xVeFFWbWxvZFVWQlVFOU9lR2RDUnkwdExTMHRMUzB0Y0dwaVkzRXhPVUZCUVVGQlIzTkVkMWxSUnpGaVdFbEJFZ1ZUVVRnek1Sb0xDUEt2QlJBQ0dnTlRSMFE0SEhDRmxRUT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODMxIl1dXQ=="
         },
         {
             "flights": [
@@ -116,10 +116,10 @@
                 "typical_for_this_route": 321000,
                 "difference_percent": -37
             },
-            "price": 836,
+            "price": 995,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRneU5Sb0xDSkNOQlJBQ0dnTlRSMFE0SEhERStnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODI1Il1dXQ=="
+            "booking_token": "WyJDalJJYmpSd0xVeFFWbWxvZFVWQlVFOU9lR2RDUnkwdExTMHRMUzB0Y0dwaVkzRXhPVUZCUVVGQlIzTkVkMWxSUnpGaVdFbEJFZ1ZUVVRneU5Sb0xDUHFJQmhBQ0dnTlRSMFE0SEhDSDJnUT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODI1Il1dXQ=="
         },
         {
             "flights": [
@@ -156,10 +156,49 @@
                 "typical_for_this_route": 321000,
                 "difference_percent": -21
             },
-            "price": 836,
+            "price": 995,
             "type": "Round trip",
             "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
-            "booking_token": "WyJDalJJZVdsemJWazVjV1Y1VmsxQlRtVjRObWRDUnkwdExTMHRMUzB0TFhaMGRHa3hPVUZCUVVGQlIzTkRja1ZKU0hCaFFsbEJFZ1ZUVVRneU54b0xDSkNOQlJBQ0dnTlRSMFE0SEhERStnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODI3Il1dXQ=="
+            "booking_token": "WyJDalJJYmpSd0xVeFFWbWxvZFVWQlVFOU9lR2RDUnkwdExTMHRMUzB0Y0dwaVkzRXhPVUZCUVVGQlIzTkVkMWxSUnpGaVdFbEJFZ1ZUVVRneU54b0xDUHFJQmhBQ0dnTlRSMFE0SEhDSDJnUT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODI3Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Shanghai Pudong International Airport",
+                        "id": "PVG",
+                        "time": "2027-02-09 17:20"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 23:20"
+                    },
+                    "duration": 360,
+                    "airplane": "Airbus A321",
+                    "airline": "Air China",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+                    "travel_class": "Economy",
+                    "flight_number": "CA 677",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "In-seat USB outlet",
+                        "Stream media to your device",
+                        "Carbon emissions estimate: 362 kg"
+                    ]
+                }
+            ],
+            "total_duration": 360,
+            "carbon_emissions": {
+                "this_flight": 363000,
+                "typical_for_this_route": 321000,
+                "difference_percent": 13
+            },
+            "price": 1033,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+            "booking_token": "WyJDalJJYmpSd0xVeFFWbWxvZFVWQlVFOU9lR2RDUnkwdExTMHRMUzB0Y0dwaVkzRXhPVUZCUVVGQlIzTkVkMWxSUnpGaVdFbEJFZ1ZEUVRZM054b0xDTnVtQmhBQ0dnTlRSMFE0SEhDUDhRUT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIlNRIiwiODI4Il1dLFtbIlBWRyIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIkNBIiwiNjc3Il1dXQ=="
         }
     ]
 }
