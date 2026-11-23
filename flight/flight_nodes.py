@@ -1,19 +1,20 @@
 from states import TravelState
 from langgraph.types import interrupt
 from langchain.messages import SystemMessage, HumanMessage
-import model_llm
+from model_llm import load_llm
 from flight.model import FlightParams
 import serpapi
 import os 
 from function import *
 import json 
 
+llm = load_llm()
 api_key = os.getenv("SERP_API_KEY")
 client = serpapi.Client(api_key=api_key)
 
 def flight_parser(state:TravelState):
     
-    llm_flight_params = model_llm.load_llm().with_structured_output(FlightParams)
+    llm_flight_params = llm.with_structured_output(FlightParams)
     response = llm_flight_params.invoke(state['messages'])
     print("This the paras", response.model_dump())
     return {'flight_params': response.model_dump()}
@@ -72,7 +73,7 @@ def update_outbound_node(state:TravelState):
         "Example: if the user type a whole new requirement, change everything accordingly"
     )
 
-    llm_flight_params = model_llm.load_llm().with_structured_output(FlightParams)
+    llm_flight_params = llm.with_structured_output(FlightParams)
     
     new_params = llm_flight_params.invoke(prompt)
 
