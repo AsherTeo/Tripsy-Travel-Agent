@@ -6,8 +6,6 @@ sys.path.append(str(ROOT))
 
 from unittest.mock import MagicMock, patch
 from langchain.messages import AIMessage
-from uuid import uuid4 
-from build_graph import graph 
 from flight.flight_nodes import *
 from chatbot.simple_chatbot import chatbot
 from tests.config import *
@@ -20,7 +18,7 @@ def test_chatbot():
 
         state = {'messages': "What should i eat ?"}
         response = chatbot(state)
-        
+
         assert response['messages'][-1].content == "You should eat chicken rice"
 
 
