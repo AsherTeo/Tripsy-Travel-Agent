@@ -28,8 +28,8 @@ def outbound_flight_api(state:TravelState):
         best = get_best_flight(results)
     except Exception as e:
         best = None
-    with open('output.json', 'w') as file:
-        json.dump(best, file, indent=4)
+    # with open('output.json', 'w') as file:
+    #     json.dump(best, file, indent=4)
   
     return {'flight_outbound_results': best or None}
 
@@ -155,9 +155,11 @@ def return_flight_api(state:TravelState):
         best = get_best_flight(results)
     except Exception as e:
         best = None
-    with open('return.json', 'w') as file:
-        json.dump(best, file, indent=4)
-    
+    # with open('results.json', 'w') as file:
+    #     json.dump(results.as_dict(), file, indent=4)
+
+    # with open('best.json', 'w') as file:
+    #     json.dump(best, file, indent=4)
     return {'flight_return_results': best or None}
 
 

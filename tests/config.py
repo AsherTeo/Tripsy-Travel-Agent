@@ -105,78 +105,266 @@ roundtrips_params = FlightParams(
         adults= 1,
     )
 
+roundtrips_params1 = FlightParams(
+        departure_id="SIN",
+        arrival_id="CAN",
+        outbound_date="2027-03-04",
+        return_date="2027-03-09",
+        type=1,
+        adults= 1,
+    )
 
-roundtrips_results = {
+round_trips_picked= {
+            "departure_token": "WyJDalJJVVY5M2NIUmhkM05pT0dkQlRtdElUa0ZDUnkwdExTMHRMV05uWkhwMk1pMXVNa0ZCUVVGQlIzTkVkMWhOU2xaRVJEQkJFZ1k1UXpnMU5USWFDd2lGcndNUUFob0RVMGRFT0J4d2djNEMiLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIjlDIiwiODU1MiJdXV0="
+        }
+
+
+roundtrips_result = {
+    
+    "other_flights": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 10:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 15:00"
+                    },
+                    "duration": 255,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 101",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 160 kg"
+                    ],
+                }
+            ],
+            "total_duration": 255,
+            "carbon_emissions": {
+                "this_flight": 160000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -37
+            },
+            "price": 672,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZVVWpFd01Sb0xDTEtNQkJBQ0dnTlRSMFE0SEhDTWxnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlRSIiwiMTAxIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 02:15"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 06:35"
+                    },
+                    "duration": 260,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 853",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 147 kg"
+                    ],
+                }
+            ],
+            "total_duration": 260,
+            "carbon_emissions": {
+                "this_flight": 147000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -42
+            },
+            "price": 879,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZUVVRnMU14b0xDS0N1QlJBQ0dnTlRSMFE0SEhDNGt3UT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODUzIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 13:30"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 17:50"
+                    },
+                    "duration": 260,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 851",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 147 kg"
+                    ]
+                }
+            ],
+            "total_duration": 260,
+            "carbon_emissions": {
+                "this_flight": 147000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -42
+            },
+            "price": 1081,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZUVVRnMU1Sb0xDSWpNQmhBQ0dnTlRSMFE0SEhEVGpRVT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODUxIl1dXQ=="
+        }
+    ],
+}
+
+roundtrips_best = {
     "Total_Flight": [
         {
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Singapore Changi Airport",
-                        "id": "SIN",
-                        "time": "2027-02-04 06:30"
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 10:45"
                     },
                     "arrival_airport": {
-                        "name": "Shanghai Pudong International Airport",
-                        "id": "PVG",
-                        "time": "2027-02-04 11:45"
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 15:00"
                     },
-                    "duration": 315,
-                    "airplane": "Airbus A320",
-                    "airline": "Spring",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/9C.png",
+                    "duration": 255,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
                     "travel_class": "Economy",
-                    "flight_number": "9C 8552",
+                    "flight_number": "TR 101",
+                    "legroom": "31 in",
                     "extensions": [
-                        "Carbon emissions estimate: 270 kg"
-                    ]
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 160 kg"
+                    ],
                 }
             ],
-            "total_duration": 315,
+            "total_duration": 255,
             "carbon_emissions": {
-                "this_flight": 270000,
-                "typical_for_this_route": 304000,
-                "difference_percent": -11
+                "this_flight": 160000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -37
             },
-            "price": 552,
+            "price": 672,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/9C.png",
-            "departure_token": "WyJDalJJVVY5M2NIUmhkM05pT0dkQlRtdElUa0ZDUnkwdExTMHRMV05uWkhwMk1pMXVNa0ZCUVVGQlIzTkVkMWhOU2xaRVJEQkJFZ1k1UXpnMU5USWFDd2lGcndNUUFob0RVMGRFT0J4d2djNEMiLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIjlDIiwiODU1MiJdXV0="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZVVWpFd01Sb0xDTEtNQkJBQ0dnTlRSMFE0SEhDTWxnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlRSIiwiMTAxIl1dXQ=="
         },
         {
             "flights": [
                 {
                     "departure_airport": {
-                        "name": "Singapore Changi Airport",
-                        "id": "SIN",
-                        "time": "2027-02-04 17:40"
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 02:15"
                     },
                     "arrival_airport": {
-                        "name": "Shanghai Pudong International Airport",
-                        "id": "PVG",
-                        "time": "2027-02-04 22:55"
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 06:35"
                     },
-                    "duration": 315,
-                    "airplane": "Airbus A320",
-                    "airline": "Spring",
-                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/9C.png",
+                    "duration": 260,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
                     "travel_class": "Economy",
-                    "flight_number": "9C 7678",
+                    "flight_number": "SQ 853",
+                    "legroom": "32 in",
                     "extensions": [
-                        "Carbon emissions estimate: 270 kg"
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 147 kg"
                     ],
-                    "often_delayed_by_over_30_min": True
+                    
                 }
             ],
-            "total_duration": 315,
+            "total_duration": 260,
             "carbon_emissions": {
-                "this_flight": 270000,
-                "typical_for_this_route": 304000,
-                "difference_percent": -11
+                "this_flight": 147000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -42
             },
-            "price": 571,
+            "price": 879,
             "type": "Round trip",
-            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/9C.png",
-            "departure_token": "WyJDalJJVVY5M2NIUmhkM05pT0dkQlRtdElUa0ZDUnkwdExTMHRMV05uWkhwMk1pMXVNa0ZCUVVGQlIzTkVkMWhOU2xaRVJEQkJFZ1k1UXpjMk56Z2FDd2o3dlFNUUFob0RVMGRFT0J4d3lka0MiLFtbIlNJTiIsIjIwMjctMDItMDQiLCJQVkciLG51bGwsIjlDIiwiNzY3OCJdXV0="
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZUVVRnMU14b0xDS0N1QlJBQ0dnTlRSMFE0SEhDNGt3UT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODUzIl1dXQ=="
         },
-]}
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 13:30"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 17:50"
+                    },
+                    "duration": 260,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 851",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 147 kg"
+                    ]
+                }
+            ],
+            "total_duration": 260,
+            "carbon_emissions": {
+                "this_flight": 147000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -42
+            },
+            "price": 1081,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZUVVRnMU1Sb0xDSWpNQmhBQ0dnTlRSMFE0SEhEVGpRVT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODUxIl1dXQ=="
+        }
+    ]
+}

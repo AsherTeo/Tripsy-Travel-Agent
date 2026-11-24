@@ -1,4 +1,202 @@
 {
-    "error": "No flights found",
-    "search_parameters": null
+    "Total_Flight": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-24 08:30"
+                    },
+                    "arrival_airport": {
+                        "name": "Taiwan Taoyuan International Airport",
+                        "id": "TPE",
+                        "time": "2026-12-24 13:10"
+                    },
+                    "duration": 280,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 874",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 191 kg"
+                    ]
+                }
+            ],
+            "total_duration": 280,
+            "carbon_emissions": {
+                "this_flight": 191000,
+                "typical_for_this_route": 275000,
+                "difference_percent": -31
+            },
+            "price": 191,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJVFdWU05tUnJPR2h3WDFsQlF6ZzRlWGRDUnkwdExTMHRMUzB0TFMxd1ptOTRPVUZCUVVGQlIzTkdUVmwzVERrNE16aEJFZ1ZVVWpnM05Cb0xDTXlVQVJBQ0dnTlRSMFE0SEhDSmN3PT0iLFtbIlNJTiIsIjIwMjYtMTItMjQiLCJUUEUiLG51bGwsIlRSIiwiODc0Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-24 12:20"
+                    },
+                    "arrival_airport": {
+                        "name": "Taiwan Taoyuan International Airport",
+                        "id": "TPE",
+                        "time": "2026-12-24 17:00"
+                    },
+                    "duration": 280,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 872",
+                    "legroom": "30 in",
+                    "extensions": [
+                        "Average legroom (30 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 204 kg"
+                    ]
+                }
+            ],
+            "total_duration": 280,
+            "carbon_emissions": {
+                "this_flight": 204000,
+                "typical_for_this_route": 275000,
+                "difference_percent": -26
+            },
+            "price": 249,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJVFdWU05tUnJPR2h3WDFsQlF6ZzRlWGRDUnkwdExTMHRMUzB0TFMxd1ptOTRPVUZCUVVGQlIzTkdUVmwzVERrNE16aEJFZ1ZVVWpnM01ob0xDUFRCQVJBQ0dnTlRSMFE0SEhDVmxnRT0iLFtbIlNJTiIsIjIwMjYtMTItMjQiLCJUUEUiLG51bGwsIlRSIiwiODcyIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-24 06:10"
+                    },
+                    "arrival_airport": {
+                        "name": "Taiwan Taoyuan International Airport",
+                        "id": "TPE",
+                        "time": "2026-12-24 11:00"
+                    },
+                    "duration": 290,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 892",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 191 kg"
+                    ]
+                }
+            ],
+            "total_duration": 290,
+            "carbon_emissions": {
+                "this_flight": 191000,
+                "typical_for_this_route": 275000,
+                "difference_percent": -31
+            },
+            "price": 249,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJVFdWU05tUnJPR2h3WDFsQlF6ZzRlWGRDUnkwdExTMHRMUzB0TFMxd1ptOTRPVUZCUVVGQlIzTkdUVmwzVERrNE16aEJFZ1ZVVWpnNU1ob0xDUFRCQVJBQ0dnTlRSMFE0SEhDVmxnRT0iLFtbIlNJTiIsIjIwMjYtMTItMjQiLCJUUEUiLG51bGwsIlRSIiwiODkyIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-24 00:55"
+                    },
+                    "arrival_airport": {
+                        "name": "Taiwan Taoyuan International Airport",
+                        "id": "TPE",
+                        "time": "2026-12-24 05:35"
+                    },
+                    "duration": 280,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 866",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 191 kg"
+                    ],
+                    "overnight": true
+                }
+            ],
+            "total_duration": 280,
+            "carbon_emissions": {
+                "this_flight": 191000,
+                "typical_for_this_route": 275000,
+                "difference_percent": -31
+            },
+            "price": 355,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJVFdWU05tUnJPR2h3WDFsQlF6ZzRlWGRDUnkwdExTMHRMUzB0TFMxd1ptOTRPVUZCUVVGQlIzTkdUVmwzVERrNE16aEJFZ1ZVVWpnMk5ob0xDTnlVQWhBQ0dnTlRSMFE0SEhDbDFnRT0iLFtbIlNJTiIsIjIwMjYtMTItMjQiLCJUUEUiLG51bGwsIlRSIiwiODY2Il1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2026-12-24 02:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Taiwan Taoyuan International Airport",
+                        "id": "TPE",
+                        "time": "2026-12-24 06:40"
+                    },
+                    "duration": 280,
+                    "airplane": "Airbus A321neo",
+                    "airline": "China Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CI.png",
+                    "travel_class": "Economy",
+                    "flight_number": "CI 756",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat USB outlet",
+                        "On-demand video",
+                        "Carbon emissions estimate: 289 kg"
+                    ],
+                    "overnight": true
+                }
+            ],
+            "total_duration": 280,
+            "carbon_emissions": {
+                "this_flight": 290000,
+                "typical_for_this_route": 275000,
+                "difference_percent": 5
+            },
+            "price": 533,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CI.png",
+            "booking_token": "WyJDalJJVFdWU05tUnJPR2h3WDFsQlF6ZzRlWGRDUnkwdExTMHRMUzB0TFMxd1ptOTRPVUZCUVVGQlIzTkdUVmwzVERrNE16aEJFZ1ZEU1RjMU5ob0xDS0NnQXhBQ0dnTlRSMFE0SEhDc3dnST0iLFtbIlNJTiIsIjIwMjYtMTItMjQiLCJUUEUiLG51bGwsIkNJIiwiNzU2Il1dXQ=="
+        }
+    ]
 }

@@ -1,0 +1,125 @@
+{
+    "Total_Flight": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 10:45"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 15:00"
+                    },
+                    "duration": 255,
+                    "airplane": "Boeing 787",
+                    "airline": "Scoot",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TR 101",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat power outlet",
+                        "Carbon emissions estimate: 160 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true
+                }
+            ],
+            "total_duration": 255,
+            "carbon_emissions": {
+                "this_flight": 160000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -37
+            },
+            "price": 672,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TR.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZVVWpFd01Sb0xDTEtNQkJBQ0dnTlRSMFE0SEhDTWxnTT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlRSIiwiMTAxIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 02:15"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 06:35"
+                    },
+                    "duration": 260,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 853",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 147 kg"
+                    ],
+                    "overnight": true
+                }
+            ],
+            "total_duration": 260,
+            "carbon_emissions": {
+                "this_flight": 147000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -42
+            },
+            "price": 879,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZUVVRnMU14b0xDS0N1QlJBQ0dnTlRSMFE0SEhDNGt3UT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODUzIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Guangzhou Baiyun International Airport",
+                        "id": "CAN",
+                        "time": "2027-02-09 13:30"
+                    },
+                    "arrival_airport": {
+                        "name": "Singapore Changi Airport",
+                        "id": "SIN",
+                        "time": "2027-02-09 17:50"
+                    },
+                    "duration": 260,
+                    "airplane": "Boeing 787",
+                    "airline": "Singapore Airlines",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+                    "travel_class": "Economy",
+                    "flight_number": "SQ 851",
+                    "legroom": "32 in",
+                    "extensions": [
+                        "Above average legroom (32 in)",
+                        "Free Wi-Fi",
+                        "In-seat power & USB outlets",
+                        "On-demand video",
+                        "Carbon emissions estimate: 147 kg"
+                    ]
+                }
+            ],
+            "total_duration": 260,
+            "carbon_emissions": {
+                "this_flight": 147000,
+                "typical_for_this_route": 252000,
+                "difference_percent": -42
+            },
+            "price": 1081,
+            "type": "Round trip",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SQ.png",
+            "booking_token": "WyJDalJJY1hJemFVbE5XRWc1V0d0QlFtbFBaa0ZDUnkwdExTMHRMUzE1YVdGdk9DMXVNVUZCUVVGQlIzTkdUMVF3UnpGNlUxbEJFZ1ZUVVRnMU1Sb0xDSWpNQmhBQ0dnTlRSMFE0SEhEVGpRVT0iLFtbIlNJTiIsIjIwMjctMDItMDQiLCJDQU4iLG51bGwsIlRSIiwiMTAwIl1dLFtbIkNBTiIsIjIwMjctMDItMDkiLCJTSU4iLG51bGwsIlNRIiwiODUxIl1dXQ=="
+        }
+    ]
+}

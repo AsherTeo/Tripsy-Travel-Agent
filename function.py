@@ -2,10 +2,11 @@ from datetime import datetime
 
 def get_best_flight(results, n = 5):
 
+    
     best_fligts = results.get('best_flights', [])
     other_flights = results.get('other_flights', [])
-
-    all_flights = best_fligts + other_flights
+   
+    all_flights = best_fligts + other_flights 
 
     if not all_flights:
         return {"error": "No flights found", "search_parameters": results.get('search_parameters')}
