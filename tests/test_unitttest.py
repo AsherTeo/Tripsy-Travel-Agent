@@ -9,6 +9,7 @@ from langchain.messages import AIMessage
 from uuid import uuid4 
 from build_graph import graph 
 from flight.flight_nodes import *
+from chatbot.simple_chatbot import chatbot
 from tests.config import *
 
 def test_chatbot():
@@ -16,9 +17,10 @@ def test_chatbot():
     fake_llm.invoke.return_value = AIMessage(content= "You should eat chicken rice")
 
     with patch("chatbot.simple_chatbot.llm", fake_llm):
-        config = {'configurable': {"thread_id": {uuid4()}}}
-        response = graph.invoke({'messages': [{"role": "user", "content": "What should i eat ?"}]}, config)
 
+        state = {'messages': "What should i eat ?"}
+        response = chatbot(state)
+        
         assert response['messages'][-1].content == "You should eat chicken rice"
 
 
@@ -139,3 +141,4 @@ def test_summary_chosen_flight():
     content = response['messages'][-1]['content']
     
     assert (text in content for text in texts)
+
