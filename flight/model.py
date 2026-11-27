@@ -23,8 +23,8 @@ class FlightParams(BaseModel):
                                             "4. If the user explicitly requests a round trip, classify as "
                                             "1 (round trip)."
                                         ))
-    outbound_date: str
-    return_date: str | None = None
+    outbound_date: str = Field(description="Departure date in YYYY-MM-DD format, e.g. 2026-12-01")
+    return_date: Optional[str] = Field(default=None, description="Return date in YYYY-MM-DD format")
     travel_class: Literal[1, 2, 3, 4] = Field(default=1, description="1 = economy, 2 = premium economy, 3 = business, 4 = first. Use 1 if the user doesn't say.")
     stops : Literal[1] = 1
     

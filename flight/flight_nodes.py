@@ -28,10 +28,16 @@ def outbound_flight_api(state:TravelState):
         best = get_best_flight(results)
     except Exception as e:
         best = None
+
+    if not best or 'error' in best or  not best.get('Total_Flight'):
+        return {
+            'flight_outbound_results': None,
+            'messages': [{'role':'assistant', 'content': f"Sorry, I couldn't find flights."}]
+        } 
     # with open('output.json', 'w') as file:
     #     json.dump(best, file, indent=4)
   
-    return {'flight_outbound_results': best or None}
+    return {'flight_outbound_results': best}
 
 def got_flight(state:TravelState):
     result = state['flight_outbound_results']

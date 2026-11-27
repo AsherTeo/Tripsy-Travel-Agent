@@ -21,7 +21,10 @@ def summary_flight(results):
     summary = []
 
     for i, result in enumerate(results['Total_Flight']):
-        price = result['price']
+    
+        price = result.get('price')
+        if price is None:
+            continue
         flights = result['flights']
 
         departure_airport = flights[0]['departure_airport']['id']
