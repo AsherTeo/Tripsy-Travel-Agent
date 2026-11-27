@@ -9,7 +9,7 @@ from uuid import uuid4
 from build_graph import graph
 from langgraph.types import Command
 from eval.generate_dataset import gnr_dateset, get_answer
-from eval.metrics import eval_parser
+from eval.metrics import eval_parser, eval_result
 from flight.flight_nodes import flight_parser
 
 project_name = 'Tripsy'
@@ -70,13 +70,13 @@ def run_graph(inputs: dict):
     query = inputs['query']
     try:
         response = graph.invoke({'messages': [{'role': 'user', 'content': query}]}, config, interrupt_after=['select_onbound_flight_options'])
-
-        if '__interrupt__' in response:
-            prompt = response['__interrupt__'][0].value
-            answer = get_answer(prompt)
-            response = graph.invoke(Command(resume = answer), config, interrupt_after=['select_onbound_flight_options'],)
+        for _ in range(5):
+            if '__interrupt__' in response:
+                prompt = response['__interrupt__'][0].value
+                answer = get_answer(prompt)
+                response = graph.invoke(Command(resume = answer), config, interrupt_after=['select_onbound_flight_options'],)
     except Exception as e:
-        print('grapg error', repr(e))
+        print('graph error', repr(e))
 
     state = graph.get_state(config).values
     params = state.get('flight_params')
@@ -89,18 +89,20 @@ def run_graph(inputs: dict):
     }
 
 if __name__ == '__main__': 
+
     """
     Run parser first if no error then run the graph
     """
-    evaluate(
-        run_parser,
-        data = dataset_name,
-        evaluators= [eval_parser],
-        experiment_prefix= 'parser'
-    ) 
-
     # evaluate(
-    # run_graph,
-    # data=dataset_name,
-    # evaluators=[eval_result],
-#)
+    #     run_parser,
+    #     data = dataset_name,
+    #     evaluators= [eval_parser],
+    #     experiment_prefix= 'parser'
+    # ) 
+
+    evaluate(
+        run_graph,
+        data=dataset_name,
+        evaluators=[eval_result],
+        experiment_prefix= 'result'
+    )

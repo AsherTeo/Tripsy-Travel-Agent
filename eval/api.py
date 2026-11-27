@@ -7,7 +7,7 @@ from datetime import datetime, date
 from zoneinfo import ZoneInfo
 
 
-def find_real_flight(flight_code):
+def find_real_flight(flight_code, target_date):
     url = f'https://www.flightradar24.com/data/flights/{flight_code}'
 
     with sync_playwright() as p:
@@ -39,26 +39,28 @@ def find_real_flight(flight_code):
         arr = links[1].select_one('span.leading-none').get_text(strip=True)
 
         
-        std = None
+        stdd = None
         for label in row.select('span.sr-only'):
             if label.get_text(strip=True) == 'STD:':
                 std = label.parent.get_text(strip=True).replace('STD:', '', 1).strip()
                 current = date.today()
                 d = datetime.strptime(dates, "%Y-%m-%d").date()
-                if d > current:
+      
+                if d == date.fromisoformat(target_date):
                     stdd = datetime.strptime(std, "%I:%M %p").strftime("%H:%M")
-                    break
-        #print(dates, dep, arr, stdd)
-        some_lst.append({
-            'outbound_date':dates,
-            #'return_date':return_date,
-            'departure_id': dep,
-            'arrival_id':arr,
-            'outbound_time': stdd,
-            #'return_time': return_time
-        })
+        
+                    if not any(item['outbound_time'] == stdd for item in some_lst):
+                        some_lst.append({
+                            'outbound_date':dates,
+                            #'return_date':return_date,
+                            'departure_id': dep,
+                            'arrival_id':arr,
+                            'outbound_time': stdd,
+                            #'return_time': return_time
+                        })
+                break
         # some_dict.append(some_lst)
     return some_lst
 
-a = find_real_flight('SQ314')
-print(a)
+# a = find_real_flight('SQ314')
+# print(a)
